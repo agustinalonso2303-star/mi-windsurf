@@ -1,38 +1,52 @@
 @echo off
-echo Configurando repositorio para venta profesional...
+echo 🚀 Configurando GitHub Pages para tu proyecto...
 echo.
 
-echo 1. Creando repositorio GitHub...
-echo Ve a https://github.com/new
-echo Nombre del repositorio: mi-app-optimizada
-echo Marca "Public" y "Add a README file"
-echo Presiona cualquier tecla cuando termines...
-pause >nul
+REM Verificar si git está instalado
+git --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ❌ Git no está instalado. Por favor, instala Git primero.
+    echo Descarga: https://git-scm.com/download/win
+    pause
+    exit /b 1
+)
 
-echo.
-echo 2. Conectando repositorio local...
-git remote add origin https://github.com/agustinalonso2303-star/mi-app-optimizada.git
-git branch -M main
+REM Inicializar repositorio si no existe
+if not exist .git (
+    echo 📁 Inicializando repositorio Git...
+    git init
+    git add .
+    git commit -m "Initial commit: Mi página web"
+)
 
-echo.
-echo 3. Subiendo codigo a GitHub...
+REM Verificar si hay remoto configurado
+git remote -v | findstr "origin" >nul
+if %errorlevel% neq 0 (
+    echo 🔗 Configurando repositorio remoto...
+    echo.
+    echo Por favor, ingresa la URL de tu repositorio GitHub:
+    echo Ejemplo: https://github.com/tu-usuario/caja-windsurf.git
+    set /p repo_url="URL del repositorio: "
+    
+    git remote add origin %repo_url%
+    git branch -M main
+)
+
+REM Subir cambios a GitHub
+echo 📤 Subiendo cambios a GitHub...
 git push -u origin main
 
 echo.
-echo 4. Configurando GitHub Pages...
-echo Ve a tu repositorio -^> Settings -^> Pages
-echo Selecciona "GitHub Actions" como source
-echo Presiona cualquier tecla cuando termines...
-pause >nul
-
+echo ✅ ¡Proyecto configurado correctamente!
 echo.
-echo 5. Tu demo estara disponible en:
-echo https://agustinalonso2303-star.github.io/mi-app-optimizada
+echo 📋 Pasos finales:
+echo 1. Ve a tu repositorio en GitHub
+echo 2. Haz clic en Settings → Pages
+echo 3. En "Source", selecciona "Deploy from a branch"
+echo 4. Elige la rama "main" y carpeta "/root"
+echo 5. Haz clic en "Save"
 echo.
-echo 6. Para conectar a Vercel:
-echo - Ve a vercel.com
-echo - Importa tu repositorio de GitHub
-echo - Configura las variables de entorno
+echo 🌐 Tu sitio estará disponible en:
+echo https://[tu-usuario].github.io/caja-windsurf/
 echo.
-echo Listo! Ahora puedes vender el URL del repositorio.
 pause

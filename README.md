@@ -1,98 +1,138 @@
-# 🚀 Premium Web App Template - Zero Cold Starts
+# 🚀 Mi Página Web
 
-> **Professional React + Supabase + Vercel template optimized for instant loading**
+Una página web moderna y responsive desplegada en GitHub Pages.
 
-## 🔗 **Live Demo**
-- **GitHub Pages:** https://agustinalonso2303-star.github.io/mi-app-optimizada
-- **Vercel Production:** https://tu-app.vercel.app
+## 📋 Descripción
 
----
+Este proyecto es una página web completa creada con HTML5, CSS3 y JavaScript vanilla. Incluye:
 
-## 💎 **What Makes This Special**
+- ✅ Diseño responsive para todos los dispositivos
+- ✅ Navegación suave entre secciones
+- ✅ Animaciones modernas
+- ✅ Formulario de contacto funcional
+- ✅ Optimizado para GitHub Pages
 
-### 🚀 **Zero Cold Starts**
-- Instant loading on every visit
-- No more waiting times on Vercel
-- Optimized serverless functions
+## 🛠️ Tecnologías Utilizadas
 
-### ⚡ **Ultra-Fast Performance**
-- 95+ Google PageSpeed score
-- Optimized bundle sizes
-- Lazy loading and code splitting
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos con CSS Grid y Flexbox
+- **JavaScript (ES6+)** - Interactividad y animaciones
+- **GitHub Pages** - Hosting gratuito
 
-### �️ **Production Ready**
-- Complete error handling
-- Security best practices
-- SEO optimized
-
----
-
-## 🛠️ **Tech Stack**
-
-- **Frontend:** React 18 + Vite + React Router
-- **Backend:** Supabase (PostgreSQL + Auth + Storage)
-- **Deployment:** Vercel + GitHub Pages
-- **CI/CD:** GitHub Actions
-
----
-
-## 🚀 **Quick Start**
-
-### 1. **Clone & Install**
-```bash
-git clone https://github.com/agustinalonso2303-star/mi-app-optimizada.git
-cd mi-app-optimizada
-npm install
-```
-
-### 2. **Setup Supabase**
-1. Create free account at [supabase.com](https://supabase.com)
-2. Create new project
-3. Copy credentials to `.env.local`
-
-### 3. **Deploy**
-- **GitHub Pages:** Auto-deploy on push
-- **Vercel:** Connect repository for production
-
----
-
-## 📁 **Project Structure**
+## 📁 Estructura del Proyecto
 
 ```
-├── 📁 src/              # React components & hooks
-├── 📁 api/              # Serverless functions
-├── 📁 .github/workflows/ # CI/CD automation
-├── ⚙️ vercel.json       # Production config
-├── 🎨 vite.config.js    # Build optimization
-└── 📚 SALES_README.md   # Sales documentation
+caja-windsurf/
+├── index.html          # Página principal
+├── styles.css          # Hoja de estilos
+├── script.js           # Lógica JavaScript
+├── README.md           # Documentación
+└── .git/              # Control de versiones
 ```
 
+## 🚀 Despliegue en GitHub Pages
+
+### Método 1: Automático (Recomendado)
+
+1. Haz fork de este repositorio
+2. Ve a **Settings** → **Pages**
+3. En **Source**, selecciona **Deploy from a branch**
+4. Elige la rama **main** y carpeta **/root**
+5. Haz clic en **Save**
+
+Tu sitio estará disponible en: `https://[tu-usuario].github.io/caja-windsurf/`
+
+### Método 2: Manual
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/[tu-usuario]/caja-windsurf.git
+   cd caja-windsurf
+   ```
+
+2. Sube tus cambios:
+   ```bash
+   git add .
+   git commit -m "Mi página web"
+   git push origin main
+   ```
+
+3. Configura GitHub Pages como en el Método 1
+
+## 🎨 Personalización
+
+### Cambiar colores
+
+Edita las variables CSS en `styles.css`:
+
+```css
+:root {
+    --primary-color: #2c3e50;    /* Color principal */
+    --secondary-color: #3498db;  /* Color secundario */
+    --accent-color: #e74c3c;     /* Color de acento */
+}
+```
+
+### Modificar contenido
+
+1. **Texto**: Edita directamente en `index.html`
+2. **Estilos**: Modifica `styles.css`
+3. **Funcionalidad**: Añade código en `script.js`
+
+### Añadir nuevas secciones
+
+1. Crea una nueva sección en `index.html`
+2. Añade estilos en `styles.css`
+3. Agrega interactividad en `script.js`
+
+## 📱 Características Responsive
+
+- **Desktop**: Layout completo con todas las características
+- **Tablet**: Adaptación automática del contenido
+- **Mobile**: Navegación optimizada para pantallas pequeñas
+
+## 🔧 Funcionalidades JavaScript
+
+- ✅ Scroll suave entre secciones
+- ✅ Animaciones al hacer scroll
+- ✅ Formulario de contacto con validación
+- ✅ Efecto parallax en el hero
+- ✅ Header dinámico con transparencia
+
+## 🌐 Navegación
+
+La página incluye las siguientes secciones:
+
+- **Inicio**: Hero section con llamada a la acción
+- **Acerca**: Información sobre el proyecto
+- **Contacto**: Formulario de contacto funcional
+
+## 📈 Optimización
+
+- ✅ Imágenes optimizadas
+- ✅ CSS minificado
+- ✅ JavaScript optimizado
+- ✅ Meta tags para SEO
+
+## 🤝 Contribuir
+
+1. Fork este repositorio
+2. Crea una rama: `git checkout -b mi-feature`
+3. Haz tus cambios
+4. Sube los cambios: `git push origin mi-feature`
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Puedes usarlo libremente.
+
+## 📞 Contacto
+
+Si tienes preguntas o sugerencias:
+
+- 📧 Email: [tu-email@ejemplo.com]
+- 🐛 Issues: [GitHub Issues](https://github.com/[tu-usuario]/caja-windsurf/issues)
+
 ---
 
-## 🎯 **Perfect For**
-
-- **SaaS Applications** - Scalable architecture
-- **E-commerce** - Fast checkout experience  
-- **Portfolio Sites** - Professional presentation
-- **Business Websites** - Corporate presence
-
----
-
-## 💰 **License & Support**
-
-- ✅ **Commercial Use** - Resell to clients
-- ✅ **White Label** - Rebrand as needed
-- ✅ **30 Days Support** - Setup assistance
-- ✅ **Lifetime Updates** - Feature improvements
-
----
-
-## 📞 **Contact**
-
-**Repository:** https://github.com/agustinalonso2303-star/mi-app-optimizada
-**Live Demo:** https://tu-app.vercel.app
-**Support:** support@tu-email.com
-
----
-
-*🔥 Premium template with commercial license - Ready for production use*
+⭐ **Si te gusta este proyecto, dale una estrella en GitHub!**
