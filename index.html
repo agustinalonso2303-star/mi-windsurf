@@ -1,26 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Preconnect to Supabase to reduce latency -->
-  <link rel="preconnect" href="https://tjicodcqzlxedgrapioc.supabase.co" />
-  <link rel="dns-prefetch" href="https://tjicodcqzlxedgrapioc.supabase.co" />
-  
-  <!-- Critical CSS for faster perceived load -->
-  <style>
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
-    .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
-  </style>
-  
-  <title>Optimized Supabase + Vercel App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App Optimizada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .status {
+            background: #e8f5e8;
+            color: #2d5a2d;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-  <div id="root">
-    <div class="loading">Cargando...</div>
-  </div>
-  <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+        <h1>🚀 Mi App Optimizada</h1>
+        
+        <div class="status">
+            ✅ Página estática funcionando en GitHub Pages
+        </div>
+        
+        <p>
+            Aplicación web optimizada con tecnología de última generación.
+            Lista para producción con cero cold starts.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>⚡ Rápida</h3>
+                <p>Carga instantánea</p>
+            </div>
+            <div class="feature">
+                <h3>🛡️ Segura</h3>
+                <p>HTTPS por defecto</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Responsive</h3>
+                <p>Funciona en todos los dispositivos</p>
+            </div>
+        </div>
+        
+        <div>
+            <a href="#" class="btn" onclick="alert('Próximamente: Conexión con Supabase')">Ver Demo</a>
+            <a href="#" class="btn" onclick="alert('Próximamente: Deploy en Vercel')">Configurar</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; color: #999;">
+            URL: https://agustinalonso2303-star.github.io/mi-app-optimizada
+        </p>
+    </div>
 </body>
 </html>
